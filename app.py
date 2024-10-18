@@ -1,6 +1,4 @@
 from datetime import datetime
-from pyexpat.errors import messages
-
 from flask import Flask, render_template, request, flash
 from flask_sqlalchemy import SQLAlchemy
 from flask_mail import Mail, Message
@@ -12,7 +10,7 @@ app.config["MAIL_SERVER"] = "smtp.gmail.com"
 app.config["MAIL_PORT"] = 465
 app.config["MAIL_USE_SSL"] = True
 app.config["MAIL_USERNAME"] = "nikolay.korbut@gmail.com"
-app.config["MAIL_PASSWORD"] = "dnww ulsj yoen dmkf"
+app.config["MAIL_PASSWORD"] = ""
 
 db = SQLAlchemy(app)
 
